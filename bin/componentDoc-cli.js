@@ -56,7 +56,8 @@ var options = [
     {names: ["outputFolder", "d"], type: "string", "default": "bld", help: "Output folder for the created html and pdf."},
     {names: ["outputName", "n"], type: "string", "default": "componentDoc", help: "Name for the created html and pdf."},
     {names: ["template", "t"], type: "string", "default": "", help: "Template for the html, that should be created."},
-    {names: ["buildPDF", "p"], type: "string", "default": "true", help: "Flag for creating an pdf out of the generated html."}
+    {names: ["buildPDF", "p"], type: "string", "default": "true", help: "Flag for creating an pdf out of the generated html."},
+    {names: ["caption", "c"], type: "string", "default": "", help: "Name for the caption (title), that is displayed on the frontpage of the PDF."}
 ];
 var parser = dashdash.createParser({
     options: options,
@@ -92,6 +93,7 @@ componentDoc.generateDoc(files, {
     outputName: opts.outputName,
     template: opts.template,
     buildPDF: opts.buildPDF,
+    caption: opts.caption,
     log: function (msg) {
         process.stdout.write(msg + "\n");
     },
