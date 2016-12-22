@@ -15,11 +15,12 @@ Use the Node Package Manager (NPM) to install this module locally (default) or g
 
 All Options are optional, beacuse there is a default value for each option.
 
-- `outputFolder`  string - path and name of the folder for the generated documentation [**default**: *'bld'*]
-- `outputName`  string - name of the generated documentation (HTML and PDF) [**default**: *'componentDoc'*]
-- `template`  string - path to the template, that should be used for the generation of the documatation
+- `outputFolder` or `d`  string - path and name of the folder for the generated documentation [**default**: *'bld'*]
+- `outputName` or `n`  string - name of the generated documentation (HTML and PDF) [**default**: *'componentDoc'*]
+- `template` or `t`  string - path to the template, that should be used for the generation of the documatation
 			 [**default**: is given in the componentDoc module itself]
-- `buildPDF`  string - flag, if a PDF should be created as well [**default**: *'true'*]
+- `buildPDF` or `p`  string - flag, if a PDF should be created as well [**default**: *'true'*]
+- `caption` or `c` string - the caption, that is displayed on the frontpage of the PDF
 - `log`  function - function for log information 
 - `verbose`  function - function for verbose information
 - `error`  function - function for error information 

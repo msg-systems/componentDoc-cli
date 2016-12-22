@@ -2,7 +2,7 @@
   "name":         "componentDoc-cli",
   "homepage":     "https://github.com/msg-systems/componentDoc-cli",
   "description":  "JavaScript lightweight documentation generator",
-  "version":      "0.9.1",
+  "version":      "0.9.2",
   "license":      "MIT",
   "author": {
     "name":       "Linda Zeman",
@@ -33,7 +33,7 @@
     "package":              "1.0.1",
     "dashdash":             "1.14.0",
     "glob":                 "7.1.1",
-    "componentDoc":         "0.9.1"
+    "componentDoc":         "0.9.2"
   },
   "engines": {
     "node":                 ">=0.10.0"
